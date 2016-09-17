@@ -1,0 +1,21 @@
+﻿<Window x:Class="MC10Editor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MC10Editor"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Title="Minecraft Windows 10 Edition Editor BETA" Height="279" Width="713">
+    <Grid>
+        <Label x:Name="labelAbout"  HorizontalAlignment="Left" Margin="303,61,0,0" VerticalAlignment="Top"/>
+        <TextBlock TextWrapping="WrapWithOverflow" TextAlignment="Center" Margin="27,24,317,184">
+            <TextBlock.RenderTransform>
+                <ScaleTransform ScaleX="1.8" ScaleY="1.8" />
+            </TextBlock.RenderTransform>
+            This program allows you to easily edit features of Minecraft Windows 10 Edition
+        </TextBlock>
+        <Button x:Name="buttonTextures" Content="Texture Packs" HorizontalAlignment="Left" Margin="67,180,0,0" VerticalAlignment="Top" Width="125" Height="33" Click="buttonTextures_Click"/>
+        <Button x:Name="buttonMaps" Content="Maps" HorizontalAlignment="Right" Margin="0,180,67,0" VerticalAlignment="Top" Width="125" Height="33" Click="buttonMaps_Click"/>
+    </Grid>
+</Window>

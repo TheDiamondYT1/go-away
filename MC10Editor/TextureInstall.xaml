@@ -1,0 +1,21 @@
+﻿<Page x:Class="MC10Editor.TextureInstall"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MC10Editor"
+        mc:Ignorable="d"
+        Title="Minecraft Windows 10 Edition Editor BETA" Height="279" Width="713">
+    <Grid>
+        <Label x:Name="labelAbout"  HorizontalAlignment="Left" Margin="303,61,0,0" VerticalAlignment="Top"/>
+        <TextBlock TextWrapping="WrapWithOverflow" TextAlignment="Center" Margin="27,31,317,177">
+            <TextBlock.RenderTransform>
+                <ScaleTransform ScaleX="1.8" ScaleY="1.8" />
+            </TextBlock.RenderTransform>
+            Choose a Texture Pack zip, then click Install
+        </TextBlock>
+        <Button x:Name="buttonSelect" Content="Select" HorizontalAlignment="Left" Margin="67,180,0,0" VerticalAlignment="Top" Width="125" Height="33" Click="buttonSelect_Click"/>
+        <Button x:Name="buttonInstall" Content="Install" IsEnabled="False" HorizontalAlignment="Right" Margin="0,180,67,0" VerticalAlignment="Top" Width="125" Height="33" Click="buttonInstall_Click"/>
+        <TextBox x:Name="textBoxPath" IsReadOnly="True" TextWrapping="Wrap" Margin="123,116,124,139"/>
+    </Grid>
+</Page>
